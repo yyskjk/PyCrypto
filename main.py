@@ -42,7 +42,7 @@ def app_nav():
 
 def my_portfolio():
     api_request = requests.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=10"
-                               "&convert=USD&CMC_PRO_API_KEY=4ba63929-4189-42c8-aac9-e7999f97ef23")
+                               "&convert=USD&CMC_PRO_API_KEY=<enter your API key>")
     api = json.loads(api_request.content)
 
     cursorObj.execute("SELECT * FROM coin")
